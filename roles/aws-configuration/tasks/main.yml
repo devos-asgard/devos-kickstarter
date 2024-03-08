@@ -12,6 +12,10 @@
     name: nginx
     state: present
 
+- name: Install Nginx
+  pause:
+    seconds: 300
+
 - name: Start Nginx
   service:
     name: nginx
